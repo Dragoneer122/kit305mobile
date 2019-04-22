@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_entries"
+        android:icon="@drawable/ic_library_books_black_24dp"
+        android:title="Entries " />
+
+    <item
+        android:id="@+id/nav_add"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="New Entry " />
+
+    <item
+        android:id="@+id/nav_tracker"
+        android:icon="@drawable/ic_mood_black_24dp"
+        android:title="Mood Tracker " />
+
+</menu>

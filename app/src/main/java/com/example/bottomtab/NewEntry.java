@@ -1,0 +1,57 @@
+package com.example.bottomtab;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+
+public class NewEntry extends Fragment {
+
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+
+
+
+        View view = inflater.inflate(R.layout.frag_new,container, false);
+
+        Button btnMood = (Button) view.findViewById(R.id.btnMood);
+        btnMood.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), moodPicker.class);
+               startActivity(i);
+            }
+        });
+
+        Button btnJournal = (Button) view.findViewById(R.id.btnJournal);
+        btnJournal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), NewJournal.class);
+                startActivity(i);
+            }
+        });
+
+        Button btnMoodJournal = (Button) view.findViewById(R.id.btnMoodJournal);
+        btnMoodJournal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), MoodJournal.class);
+                startActivity(i);
+            }
+        });
+
+
+
+
+        return view;
+
+    }
+}

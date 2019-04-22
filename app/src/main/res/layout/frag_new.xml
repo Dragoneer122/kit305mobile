@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nentry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Entry"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnMood"
+        android:layout_below="@+id/nentry"
+        android:layout_alignLeft="@id/btnMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood" />
+
+    <Button
+        android:id="@+id/btnJournal"
+        android:layout_alignLeft="@id/btnJournal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Journal" />
+
+    <Button
+        android:id="@+id/btnMoodJournal"
+        android:layout_below="@id/btnMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood + Journal" />
+
+
+</RelativeLayout>
